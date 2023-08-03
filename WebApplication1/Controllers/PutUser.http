@@ -1,0 +1,13 @@
+PUT http://localhost:5064/api/UserController/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "string",
+  "lastName": "string",
+  "email": "string",
+  "hasLoan": false,
+  "hasOtherLoan": false
+}
+
+###

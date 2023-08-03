@@ -1,0 +1,12 @@
+POST http://localhost:5064/api/UserController/
+Content-Type: application/json
+
+{
+  "firstName": "string",
+  "lastName": "string",
+  "email": "string",
+  "hasLoan": true,
+  "hasOtherLoan": true
+}
+
+###

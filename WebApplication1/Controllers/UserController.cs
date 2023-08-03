@@ -1,3 +1,4 @@
+using BenchmarkDotNet.Attributes;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApplication1.Models;
@@ -16,7 +17,9 @@ namespace WebApplication1.Controllers
         }
 
         // GET: api/User
+        
         [HttpGet]
+        [Benchmark]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
           if (_context.Users == null)

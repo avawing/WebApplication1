@@ -1,7 +1,10 @@
+using BenchmarkDotNet.Running;
 using Microsoft.EntityFrameworkCore;
 using WebApplication1.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+
+BenchmarkSwitcher.FromAssembly(typeof(Program).Assembly).Run(args);
 
 
 // Add services to the container.
@@ -28,5 +31,4 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-
 app.Run();

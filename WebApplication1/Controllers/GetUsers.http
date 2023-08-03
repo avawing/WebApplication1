@@ -1,0 +1,3 @@
+GET http://localhost:5064/api/UserController
+Accept: application/json
+###
